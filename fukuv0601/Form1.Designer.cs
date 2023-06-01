@@ -38,11 +38,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(285, 178);
+            label1.Font = new Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(262, 176);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(91, 45);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "(・o・)";
             label1.Click += label1_Click;
             // 
             // button1

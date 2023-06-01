@@ -2,14 +2,14 @@ namespace fukuv0601
 {
     public partial class Form1 : Form
     {
-        int vx = -10;
+        int vx = 10;
         int vy = -10;
         string chr = "(E-E)";
 
         public Form1()
         {
             InitializeComponent();
-            MessageBox.Show($"{label1.Right}");
+            //MessageBox.Show($"{label1.Bottom}");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -21,9 +21,18 @@ namespace fukuv0601
             {
                 vx = 10;
             }
+            else if (label1.Right > 638)
+            {
+                vx = -10;
+            }
+
             if (label1.Top < 0)
             {
                 vy = 10;
+            }
+            else if (label1.Bottom > 385)
+            {
+                vy = -10;
             }
 
             string t = label1.Text;

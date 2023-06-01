@@ -9,6 +9,7 @@ namespace fukuv0601
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show($"{label1.Right}");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -16,9 +17,19 @@ namespace fukuv0601
             label1.Left += vx;
             label1.Top += vy;
 
+            if (label1.Left < 0)
+            {
+                vx = 10;
+            }
+            if (label1.Top < 0)
+            {
+                vy = 10;
+            }
+
             string t = label1.Text;
             label1.Text = chr;
             chr = t;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,6 +46,11 @@ namespace fukuv0601
         {
             timer1.Enabled = false;
             label1.Text = "YuTanaka";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

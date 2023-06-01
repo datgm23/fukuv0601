@@ -39,7 +39,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Yu Gothic UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(263, 157);
+            label1.Location = new Point(547, 144);
             label1.Name = "label1";
             label1.Size = new Size(91, 45);
             label1.TabIndex = 0;
@@ -81,6 +81,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

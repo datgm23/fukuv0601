@@ -21,7 +21,7 @@ namespace fukuv0601
             {
                 vx = 10;
             }
-            else if (label1.Right > 638)
+            else if (label1.Right > ClientSize.Width)
             {
                 vx = -10;
             }
@@ -30,7 +30,7 @@ namespace fukuv0601
             {
                 vy = 10;
             }
-            else if (label1.Bottom > 385)
+            else if (label1.Bottom > ClientSize.Height)
             {
                 vy = -10;
             }
